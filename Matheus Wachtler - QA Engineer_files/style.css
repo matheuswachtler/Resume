@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.top-bar {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282c34;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.left-buttons {
+    display: flex;
+}
+
+.right-button {
+    margin-left: auto;
+}
+
+.top-button {
+    color: white;
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.top-button:hover {
+    background-color: #666;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name-container {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header h2 {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.task-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.task-list li {
+    margin: 5px 0;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.stars {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    color: gold;
+    font-size: 20px;
+}
+
+.header-button {
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.header-button:hover {
+    background-color: #666;
+}
+
+.sidebar ul li {
+    font-size: 0.7rem;
+    margin: 1px 0;
+}
+
+.sidebar ul li {
+    margin: 1px 0;
+    padding: 1px 0;
+}
+
+.sidebar h3 {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    text-align: center;
+    background-color: rgb(105, 45, 45);
+
+}
+
+.sidebar p {
+    color: #bbb;
+}
