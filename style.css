@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .header-buttons {
@@ -13,10 +14,14 @@ body {
     margin-top: 20px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1600px;
+}
+
 .top-bar {
     position: relative;
     width: 100%;
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     background-color: #333;
@@ -33,7 +38,7 @@ body {
 }
 
 .top-button {
-    color: white;
+    color: #c0c0c0;
     background-color: rgb(105, 45, 45);
     border: none;
     padding: 10px 20px;
@@ -46,71 +51,124 @@ body {
     background-color: #666;
 }
 
-.header-info {
+.new-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-.name-container {
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-.sidebar .contact {
-    text-align: center;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-    background-color: rgb(211, 211, 211);
-    margin-left: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-header {
+    width: 100%;
     justify-content: center;
-    text-align: center;
-    margin-top: -1rem;
+    margin-top: 20px;
 }
 
-header h1 {
+.contact {
+    width: 25%;
+    background-color: #333;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.name {
+    width: calc(75% - 10px);
+    background-color: #c0c0c0;
+    padding: 10px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #c0c0c0;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(105, 45, 45);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+.email {
+    color: #c0c0c0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.city {
+    color: #c0c0c0;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.social-icon {
+    color: #c0c0c0;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: rgb(105, 45, 45);
+}
+
+.myName {
     margin: 0;
     font-size: 3rem;
+    text-align: center;
+    margin-top: 35px;
 }
 
-header h2 {
+.position {
     margin-top: 0rem;
     margin-bottom: -1rem;
     font-size: 1.5rem;
     color: rgb(105, 45, 45);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-content {
+    width: 25%;
+    background-color: #333;
+    padding: 10px;
+    margin-right: 10px;
+    color: #c0c0c0;
+    margin-top: -20px;
+}
+
+.right-content {
+    width: calc(75% - 10px);
+    background-color: #c0c0c0;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.text-base { 
+    font-size: 1.1rem;
+    margin-top: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .skill-item {
@@ -118,6 +176,13 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.skill-text {
+    flex: 1;
+    margin-right: 10px;
 }
 
 .stars {
@@ -128,88 +193,10 @@ ul li {
     font-size: 20px;
 }
 
-.sidebar ul li {
-    font-size: 0.7rem;
-    margin: 1px 0;
-}
-
-.sidebar ul li {
-    margin: 1px 0;
-    padding: 1px 0;
-}
-
-.sidebar h3 {
-    margin-top: -5px;
-    margin-bottom: -5px;
-    text-align: center;
-    background-color: rgb(105, 45, 45);
-}
-
-.sidebar p {
-    color: #bbb;
-}
-
-.section-title {
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    background-color: rgb(105, 45, 45);
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 5px 0;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background: rgb(105, 45, 45);
-    margin: 20px 0;
-}
-
-#education {
-    margin-top: 20px;
-}
-
-.education-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.education-info {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.education-date {
-    margin-left: auto;
-    font-weight: normal;
-    color: rgb(105, 45, 45);
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
 .job-title {
     font-size: 1.4rem;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.company-name {
-    color: rgb(105, 45, 45);
-    font-size: 1.2rem;
-}
-
-.college {
-    color: rgb(105, 45, 45);
-    font-size: 1.2rem;
-}
-
-.experience-info {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 .work-date {
@@ -220,57 +207,55 @@ hr {
     font-size: 1.4rem;
 }
 
-.language-level {
-    margin-left: auto;
+.company-name {
+    color: rgb(105, 45, 45);
+    font-size: 1.2rem;
+}
+
+.description {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.experience-info {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.item-date {
     font-weight: normal;
     color: rgb(105, 45, 45);
     font-weight: bold;
     font-size: 1.4rem;
-    text-transform: uppercase;
+    text-align: right;
 }
 
-.language {
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 0.8rem;
-}
-
-.email {
-    color: white;
-    text-decoration: none;
-    margin-top: -1rem;
-}
-
-.city {
-    color: white;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.social-icons {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 10px;
-    margin-top: -10px;
-}
-
-.social-icon {
-    color: white;
-    font-size: 2rem;
-    text-decoration: none;
-}
-
-.social-icon:hover {
+.item-company {
     color: rgb(105, 45, 45);
+    font-size: 1.5rem;
+}
+
+.red-line {
+    border: 1px solid rgb(105, 45, 45);
 }
 
 .certification-icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
     margin-top: 30px;
     margin-bottom: -30px;
 }
@@ -295,62 +280,55 @@ hr {
     font-weight: bold;
 }
 
-.general-info {
+.certification-icon i {
+    margin-top: 20px;
+    font-size: 5rem;
     color: rgb(105, 45, 45);
-    font-size: 1.2rem;
+}
+
+.certification-icon:hover i {
+    opacity: 0.8;
+}
+
+.full-content {
+    width: 100%;
+    background-color: rgb(105, 45, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.full-content .section-title {
+    font-size: 20px;
+    color: #c0c0c0;
     font-weight: bold;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.field {
-    display: flex;
-    justify-content: flex-start; /* Alinha os itens à esquerda */
-    gap: 20px; /* Ajuste conforme necessário para a distância desejada */
-}
-
-.field .name {
-    font-weight: bold;
-    width: auto; /* Ajuste conforme necessário */
-    text-align: right;
-}
-
-.field .value {
-    width: auto; /* Ajuste conforme necessário */
-    text-align: left;
-}
-
-.general-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-1 {
-    flex: 1;
-}
-
-.container-2 {
-    flex: 1;
     text-align: center;
-    color: black;
-    font-weight: bold;
+    margin: 0;
 }
 
-.info {
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.cv-content {
+    padding: 20px;
+    background-color: #c0c0c0;
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.cv-content .experience-info li div {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
 }
 
-.separator {
-    border-bottom: 1px solid #800000; /* Cor vinho */
-    margin: 10px 0;
-    margin-top: -10px;
-    margin-bottom: -5px;
+.cv-content .experience-info li div strong {
+    flex: 0 0 25%;
+}
+
+.cv-content .experience-info li div span {
+    flex: 1;
+    margin-left: 15px;
 }
