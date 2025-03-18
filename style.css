@@ -364,3 +364,10 @@ ul {
 .language-option:hover {
     background-color: #ddd;
 }
+
+.flag-icon {
+    width: 55px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
