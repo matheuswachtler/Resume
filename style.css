@@ -99,6 +99,14 @@ body {
     font-size: 1.1rem;
 }
 
+.phone {
+    color: #c0c0c0;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
 .social-icons {
     margin-top: 10px;
     display: flex;
