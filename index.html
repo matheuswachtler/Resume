@@ -23,8 +23,8 @@
                     <button class="top-button" onclick="toggleLanguageMenu()">LANGUAGE</button>
                     <button class="top-button" onclick="window.open('assets/matheuswachtler_resume.pdf', '_blank')">DOWNLOAD PDF</button>
                     <div id="language-menu" class="language-menu">
-                        <a href="#" class="language-option" onclick="setLanguage('pt')">PORTUGUESE</a>
-                        <a href="#" class="language-option" onclick="setLanguage('en')">ENGLISH</a>
+                        <a href="#" class="language-option" onclick="event.preventDefault(); setLanguage('pt')">PORTUGUESE</a>
+                        <a href="#" class="language-option" onclick="event.preventDefault(); setLanguage('en')">ENGLISH</a>
                     </div>
                 </div>
             </div>
